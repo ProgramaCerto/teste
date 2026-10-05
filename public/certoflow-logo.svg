@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <defs>
+    <linearGradient id="cf_brand_gradient" x1="40" y1="40" x2="472" y2="472" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0066FF" />
+      <stop offset="100%" stop-color="#00A3FF" />
+    </linearGradient>
+    <filter id="cf_shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#0066FF" flood-opacity="0.25" />
+    </filter>
+  </defs>
+
+  <!-- Ambient Glow Ring in Opera Blue -->
+  <circle cx="256" cy="256" r="230" fill="url(#cf_brand_gradient)" opacity="0.08" />
+
+  <!-- Flowing C Arch with Continuous Circular Motion -->
+  <g filter="url(#cf_shadow)">
+    <!-- Main Circular Flow C Body -->
+    <path d="M 370 148 C 330 92 264 68 190 78 C 114 88 56 150 48 232 C 38 334 116 426 220 432 C 316 438 396 376 414 286 C 418 266 400 248 380 248 C 362 248 348 260 344 278 C 332 334 278 376 218 372 C 148 368 94 306 100 236 C 106 178 148 134 204 128 C 254 122 300 138 330 174 L 290 196 C 274 204 280 230 298 230 L 424 230 C 438 230 448 220 448 206 L 448 80 C 448 62 426 54 416 68 Z" 
+          fill="url(#cf_brand_gradient)" />
+          
+    <!-- Flow Energy Orbital Core -->
+    <circle cx="256" cy="256" r="38" fill="url(#cf_brand_gradient)" />
+  </g>
+</svg>

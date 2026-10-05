@@ -1,0 +1,6 @@
+{
+  "name": "CertoFlow",
+  "description": "Navegador web moderno e premium inspirado no Opera, com navegação por guias, barra de navegação avançada, atalhos Speed Dial e suporte a navegação web real.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

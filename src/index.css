@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Inter', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-display: 'Outfit', 'Inter', sans-serif;
+    --brand-primary: #0066FF;
+    --brand-secondary: #00A3FF;
+    --brand-soft: #EDF4FF;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #F8F9FA;
+    color: #1F1F1F;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+    overscroll-behavior-y: none;
+  }
+}
+
+/* Custom Scrollbar for Light Theme */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.25);
+}
+
+/* Spinner Animation with Opera Blue */
+@keyframes spin-smooth {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.spinner-flow {
+  border: 2.5px solid rgba(0, 102, 255, 0.15);
+  border-top-color: #0066FF;
+  border-right-color: #00A3FF;
+  border-radius: 50%;
+  animation: spin-smooth 0.8s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+}
+
+/* Floating Card and Panel Shadows */
+.light-card {
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+}
+
+.light-floating {
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08), 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.brand-gradient {
+  background: linear-gradient(135deg, #0066FF 0%, #00A3FF 100%);
+}
+
+.brand-text-gradient {
+  background: linear-gradient(135deg, #0066FF 0%, #00A3FF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
